@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runner.RunFeaturesForParallel2" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="BABUR" time="0.0">
+  <properties/>
+  <system-out><![CDATA[
+?[31mFailed scenarios:?[0m
+?[31msrc/test/java/feature/Parallel2.feature:3 ?[0m# Scenario: Scenario1: Adding products to the cart without login
+
+1 Scenarios (?[31m1 failed?[0m)
+1 Steps (?[31m1 failed?[0m)
+0m7.579s
+
+java.lang.NullPointerException
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:329)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at scenarios.AddingProductsToBasketWithoutLogin.addingProductsToTheCartWithoutLogin(AddingProductsToBasketWithoutLogin.java:35)
+	at ?.When adding products to the cart without login(src/test/java/feature/Parallel2.feature:4)
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

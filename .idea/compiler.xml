@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="TrendyolAu.main" target="1.10" />
+      <module name="TrendyolAu.test" target="1.10" />
+      <module name="TrendyolAuto.main" target="1.10" />
+      <module name="TrendyolAuto.test" target="1.10" />
+      <module name="TrendyolAutomati.main" target="1.10" />
+      <module name="TrendyolAutomati.test" target="1.10" />
+      <module name="TrendyolAutomation.main" target="1.10" />
+      <module name="TrendyolAutomation.test" target="1.10" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
