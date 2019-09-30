@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import utility.Utility;
 import utility.VariablesFactory;
+
 import java.util.Locale;
 
 public class LoginAndAddProductsToBasket {
@@ -37,7 +38,7 @@ public class LoginAndAddProductsToBasket {
         wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".btn-login-submit")));
         variables.driver.findElement(By.cssSelector(".btn-login-submit")).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("myAccount")));
-        int size = textCounter("Hesabım");
+        int size = textCounter();
         if (size == 2) {
             System.out.println("Login Successful");
         } else {
@@ -79,14 +80,14 @@ public class LoginAndAddProductsToBasket {
         }
     }
 
-    private int textCounter(String text) {
+    private int textCounter() {
         WebElement body = variables.driver.findElement(By.tagName("body"));
         String bodyText = body.getText();
         int count = 0;
-        while (bodyText.contains(text)) {
+        while (bodyText.contains("Hesabım")) {
             count++;
             // We continue to search where we left off ...
-            bodyText = bodyText.substring(bodyText.indexOf(text) + text.length());
+            bodyText = bodyText.substring(bodyText.indexOf("Hesabım") + "Hesabım".length());
         }
         return count;
     }

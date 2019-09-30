@@ -17,7 +17,7 @@ public class AddingProductsToBasketWithoutLogin {
     static {
         //The language of Java is set in English
         Locale.setDefault(new Locale("en", "EN"));
-        Utility.iHaveOpenedWithBrowser("https://www.hepsiburada.com/", "chrome",variables);
+        Utility.iHaveOpenedWithBrowser("https://www.hepsiburada.com/", "chrome", variables);
     }
 
     private WebDriverWait wait = new WebDriverWait(variables.driver, 5, 100);

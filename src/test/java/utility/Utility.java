@@ -14,15 +14,14 @@ import java.util.concurrent.ThreadLocalRandom;
 public class Utility {
 
     public static int generateRandomValue(Integer min, Integer max) {
-        int randomNum = ThreadLocalRandom.current().nextInt(min, max + 1);
-        return randomNum;
+        return ThreadLocalRandom.current().nextInt(min, max + 1);
     }
 
     public static void iHaveOpenedWithBrowser(String baseUrl, String browser, VariablesFactory variables) {
         if (browser.toLowerCase().contains("chrome")) {
             WebDriverManager.chromedriver().arch32().setup();
             //For Decline Notification
-            Map<String, Object> prefs = new HashMap<String, Object>();
+            Map<String, Object> prefs = new HashMap<>();
             prefs.put("profile.default_content_setting_values.notifications", 2);
             ChromeOptions options = new ChromeOptions();
             options.setExperimentalOption("prefs", prefs);

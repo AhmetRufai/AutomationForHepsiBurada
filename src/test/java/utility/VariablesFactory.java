@@ -2,6 +2,7 @@ package utility;
 /*This class was created to run parallel tests with 2 browser windows.*/
 
 import org.openqa.selenium.WebDriver;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -21,7 +22,7 @@ public class VariablesFactory {
     private Map<String, VariablesFactory> variableMap = new HashMap<>();
 
     public enum VariableType {
-        PRIMARY, SECONDARY;
+        PRIMARY, SECONDARY
     }
 
 
